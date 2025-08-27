@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Management de proximité — Présentation officielle</title>
+  <meta name="description" content="Formation Management de proximité : objectifs, programme, informations pratiques, documents téléchargeables et contact formateur." />
+  <meta name="color-scheme" content="light dark">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <style>
+    :root{
+      --bg:#ffffff; --fg:#0a0a0a; --accent:#0a66c2; --muted:#3b3b3b; --ok:#0f9d58; --warning:#c2510a; --surface:#f3f5f7; --maxw: 960px;
+    }
+    @media (prefers-color-scheme: dark){ :root{ --bg:#0b0f13; --fg:#f5f7fa; --accent:#64b5ff; --muted:#d0d7df; --surface:#121720; } }
+    html { scroll-behavior:smooth; }
+    body{ margin:0; font-family: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, "Helvetica Neue", Arial, Noto Sans, "Apple Color Emoji", "Segoe UI Emoji"; background:var(--bg); color:var(--fg); line-height:1.6; }
+    a{ color:var(--accent); }
+    .wrap{ max-width:var(--maxw); margin-inline:auto; padding: clamp(16px, 2vw, 24px); }
+    .skip{ position:absolute; left:-9999px; top:auto; width:1px; height:1px; overflow:hidden; }
+    .skip:focus{ position:static; width:auto; height:auto; padding:8px 12px; background:var(--accent); color:#fff; border-radius:8px; }
+
+    header{ background:linear-gradient(120deg, var(--surface), transparent 60%); border-bottom:1px solid color-mix(in srgb, var(--fg) 12%, transparent); }
+    .head{ display:grid; gap: 16px; align-items:center; }
+    .head h1{ font-size: clamp(1.6rem, 2.8vw, 2.4rem); margin:.2rem 0; }
+    .tagline{ font-size: clamp(1rem, 1.8vw, 1.1rem); color:var(--muted); margin:0; }
+    .brand{ display:flex; align-items:center; gap:12px; }
+    .brand img{ width:56px; height:56px; object-fit:contain; border-radius:12px; background:var(--surface); border:1px solid color-mix(in srgb, var(--fg) 10%, transparent); }
+
+    section#formation{ display:grid; gap: 28px; }
+
+    .hero{ display:grid; gap:12px; }
+    .hero figure{ margin:0; }
+    .hero img{ width:100%; height: clamp(180px, 40vh, 340px); object-fit:cover; border-radius:16px; border:1px solid color-mix(in srgb, var(--fg) 12%, transparent); }
+    .meta{ display:grid; gap:8px; padding:12px; border:1px solid color-mix(in srgb, var(--fg) 12%, transparent); border-radius:12px; background:var(--surface); }
+    .meta div{ display:grid; grid-template-columns: 160px 1fr; gap:8px; }
+    .meta dt{ font-weight:600; }
+
+    .prog{ border:1px solid color-mix(in srgb, var(--fg) 12%, transparent); border-radius:14px; overflow:hidden; }
+    .prog header{ padding:12px 16px; border-bottom:1px solid color-mix(in srgb, var(--fg) 10%, transparent); background:var(--surface); display:flex; align-items:center; justify-content:space-between; gap:12px; flex-wrap:wrap; }
+    details.module{ border-top:1px solid color-mix(in srgb, var(--fg) 10%, transparent); background:transparent; }
+    details.module[open]{ background: color-mix(in srgb, var(--surface) 70%, transparent); }
+    details.module summary{ cursor:pointer; list-style:none; padding:14px 16px; display:flex; align-items:center; justify-content:space-between; font-weight:600; }
+    details.module summary::marker{ display:none; }
+    details.module summary span{ display:inline-flex; align-items:center; gap:10px; }
+    details.module .content{ padding: 0 16px 16px 16px; }
+
+    .downloads{ display:grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap:12px; }
+    .btn{ display:inline-flex; align-items:center; justify-content:center; gap:10px; padding:12px 14px; border-radius:12px; border:2px solid var(--accent); text-decoration:none; font-weight:600; }
+    .btn:hover{ transform: translateY(-1px); }
+
+    .map{ border-radius:16px; overflow:hidden; border:1px solid color-mix(in srgb, var(--fg) 12%, transparent); }
+    .map iframe{ width:100%; height:320px; border:0; }
+
+    footer{ border-top:1px solid color-mix(in srgb, var(--fg) 12%, transparent); background: linear-gradient(180deg, transparent, var(--surface)); }
+    .foot{ display:grid; gap:8px; font-size:.95rem; }
+
+    @media (prefers-reduced-motion: reduce){ *{ animation: none !important; transition:none !important; scroll-behavior:auto !important; } }
+  </style>
+</head>
+<body>
+  <a class="skip" href="#formation">Aller au contenu</a>
+
+  <header role="banner">
+    <div class="wrap head" aria-describedby="accroche">
+      <div class="brand" aria-label="Organisme de formation">
+        <img src="logo.jpg" alt="Logo de l'organisme (ou de l'entreprise pour l'intra)" />
+        <div>
+          <h1>Management de proximité</h1>
+          <p id="accroche" class="tagline">Boostez votre management</p>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main id="contenu-principal" class="wrap" role="main">
+    <section id="formation" aria-label="Présentation de la formation (section unique)">
+
+      <div class="hero" aria-describedby="infos-pratiques">
+        <figure>
+          <img src="illustration.jpg" alt="Illustration thématique : management de proximité" loading="lazy" />
+        </figure>
+        <dl id="infos-pratiques" class="meta">
+          <div>
+            <dt>Dates</dt>
+            <dd>08/09/2025 → 09/09/2025 — 09:00–17:00</dd>
+          </div>
+          <div>
+            <dt>Lieu</dt>
+            <dd>Saint‑Rémy‑lès‑Chevreuse (présentiel)</dd>
+          </div>
+          <div>
+            <dt>Certification</dt>
+            <dd>Non certifiante — Attestation de formation délivrée</dd>
+          </div>
+          <div>
+            <dt>Public / Prérequis</dt>
+            <dd>Compagnons, chefs d’équipe, chefs de chantier — Aucun prérequis</dd>
+          </div>
+          <div>
+            <dt>Objectifs</dt>
+            <dd>
+              <ul>
+                <li>Capitaliser sur ses forces et gagner en efficacité managériale</li>
+                <li>Formuler une demande claire et la faire respecter</li>
+                <li>Développer son impact et renforcer la motivation de l’équipe</li>
+              </ul>
+            </dd>
+          </div>
+        </dl>
+      </div>
+
+      <div class="prog" role="region" aria-label="Programme détaillé par modules">
+        <header>
+          <h2 style="margin:0">Programme</h2>
+        </header>
+
+        <details class="module" open>
+          <summary><span>Jour 1 — Rôle & positionnement du manager de proximité</span><span aria-hidden="true">▾</span></summary>
+          <div class="content">
+            <ul>
+              <li>Clarifier rôles et missions du manager de proximité (travail en sous‑groupes + apports)</li>
+              <li>Ajuster sa communication aux interlocuteurs (mises en situation sur cas réels)</li>
+              <li>Communication claire : consignes, questionnement, reformulation</li>
+              <li>Autorité saine : doser empathie/confiance, gérer l’ego (dire merci, pardon, je ne sais pas…)</li>
+              <li>Définir un objectif SMART et lancer un défi collectif</li>
+            </ul>
+          </div>
+        </details>
+
+        <details class="module">
+          <summary><span>Jour 2 — Animation & organisation de l’équipe</span><span aria-hidden="true">▾</span></summary>
+          <div class="content">
+            <ul>
+              <li>Agilité relationnelle (modèle des 4 couleurs, identifier les forces de chacun)</li>
+              <li>Développer ses collaborateurs : délégation, droit à l’erreur, feedback, recadrage</li>
+              <li>Remonter efficacement un problème à sa hiérarchie (CAS + entraînement)</li>
+              <li>Organiser l’activité avec la Matrice d’Eisenhower</li>
+              <li>Construire son plan d’action personnel (méthode KISS) et bilan</li>
+            </ul>
+          </div>
+        </details>
+
+        <details class="module">
+          <summary><span>Méthodes & ressources</span><span aria-hidden="true">▾</span></summary>
+          <div class="content">
+            <ul>
+              <li>Exposés synthétiques, études de cas, jeux de rôles, mises en situation</li>
+              <li>Supports : diaporama, fiches outil, feuille de route, livret de fiches outils</li>
+              <li>Questionnaire préalable (J‑15) pour recueillir besoins et attentes</li>
+            </ul>
+          </div>
+        </details>
+
+        <details class="module">
+          <summary><span>Évaluation & certification</span><span aria-hidden="true">▾</span></summary>
+          <div class="content">
+            <ul>
+              <li><strong>Évaluation des acquis</strong> : questionnaire en fin de formation</li>
+              <li><strong>Formalisation</strong> : attestation de formation</li>
+            </ul>
+          </div>
+        </details>
+
+        <details id="inclusion" class="module">
+          <summary><span>Accessibilité & inclusion</span><span aria-hidden="true">▾</span></summary>
+          <div class="content">
+            <p>Locaux accessibles souhaités (à confirmer). Nos lieux partenaires sont équipés pour accueillir les personnes en situation de handicap. Merci de nous signaler tout besoin d’aménagement en amont.</p>
+            <ul>
+              <li><strong>Référente handicap</strong> : Élodie Costes (coordonnées sur demande)</li>
+              <li>Documents remis : supports et fiches outils. Sur demande, formats adaptés.</li>
+            </ul>
+          </div>
+        </details>
+      </div>
+
+      <div role="region" aria-label="Documents téléchargeables" class="downloads">
+        <a class="btn" href="programme.pdf" download aria-label="Télécharger le programme au format PDF">📄 Programme (PDF)</a>
+      </div>
+
+      <div class="map" role="region" aria-label="Localisation sur carte">
+        <iframe
+          title="Carte Google Maps – Saint‑Rémy‑lès‑Chevreuse"
+          loading="lazy"
+          allowfullscreen
+          referrerpolicy="no-referrer-when-downgrade"
+          src="https://www.google.com/maps?q=Saint-R%C3%A9my-l%C3%A8s-Chevreuse%2078470%20France&output=embed">
+        </iframe>
+      </div>
+
+    </section>
+  </main>
+
+  <footer class="wrap" role="contentinfo">
+    <div class="foot">
+      <strong>Contact formateur :</strong>
+      <span>Alain LE FAUCHEUR — <a href="mailto:skelz@orange.fr">skelz@orange.fr</a> — 06 83 33 36 94</span>
+      <span>Politique d'inclusion & gestion du handicap : <a href="#inclusion">consulter les aménagements</a></span>
+      <small>Version : v2.0 — Fichiers attendus dans le dépôt : index.html · programme.pdf · illustration.jpg · logo.jpg</small>
+    </div>
+  </footer>
+
+  <script>
+    (function(){
+      const toggleAllBtn = document.createElement('button');
+      toggleAllBtn.className = 'btn';
+      toggleAllBtn.type = 'button';
+      toggleAllBtn.setAttribute('aria-expanded','false');
+      toggleAllBtn.textContent = 'Tout déployer';
+      const prog = document.querySelector('.prog header');
+      if(prog){ prog.appendChild(toggleAllBtn); }
+      const detailsEls = Array.from(document.querySelectorAll('details.module'));
+      toggleAllBtn.addEventListener('click',()=>{
+        const expand = toggleAllBtn.getAttribute('aria-expanded') === 'false';
+        detailsEls.forEach(d=> d.open = expand);
+        toggleAllBtn.setAttribute('aria-expanded', String(expand));
+        toggleAllBtn.textContent = expand ? 'Tout replier' : 'Tout déployer';
+      });
+    })();
+  </script>
+</body>
+</html>
